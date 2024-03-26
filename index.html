@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Links com informações</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image:url(./EEEEEMicrosoft_Nostalgic_Windows_Wallpaper_4k.jpeg);
+      background-size: 100%;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #00ff6a;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #0056b3;
+    }
+    
+    .info {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="#" class="button">1</a>
+  <a href="#" class="button">2</a>
+  <a href="#" class="button">3</a>
+  <a href="#" class="button">4</a>
+  
+  <div id="info1" class="info">
+    <h2>MEU Portfólio NO GITHUB ROGERIO DA SILVA</h2>
+    <p>
+      Aqui está o meu portfólio onde você pode encontrar mais informações sobre mim e meus trabalhos.
+    </p>
+    <ul>
+      <li><a href="https://github.com/R0GESILVA">Início</a></li>
+    </ul>
+  </div>
+  
+  <div id="info2" class="info">
+    <img src="c6883430-2e97-48c3-bf28-dc58923a3277.jpg">
+  <h1>Sobre Mim</h1>
+  <p>Olá! Meu nome é Rogério da Silva e tenho 21 anos. Sou apaixonado por análise e desenvolvimento de sistemas e
+     estou totalmente empenhado em realizar projetos de excelência. Tenho experiência na área de Administração e estou 
+     sempre em busca de novos desafios para crescer profissionalmente. Além disso, tenho uma grande paixão pela música
+      e adoro tocar violino. Acredito que a música traz uma sensibilidade única para minha vida e também para o meu
+ trabalho. Estou animado para compartilhar meus conhecimentos e experiências com vocês. Se tiver alguma pergunta
+ ou oportunidade de colaboração, não hesite em entrar em contato.
+
+
+
+
+
+  </p>
+  <p>Estou animado para compartilhar meus conhecimentos e experiências com vocês. Se você tiver alguma pergunta ou oportunidade de colaboração, não hesite em entrar em contato.</p>
+    </div>
+
+  <div id="info3" class="info">
+    <h2>TRABALHOS</h2>
+    <p>
+      Confira meus trabalhos anteriores e projetos em que estou envolvido atualmente.
+
+      1° Gerente de loja - Gestão de equipe: Contratar, treinar e supervisionar a equipe de funcionários da loja, atribuindo tarefas e garantindo um ambiente de trabalho produtivo e positivo.
+
+      Atendimento ao cliente: Garantir um excelente atendimento ao cliente, lidando com reclamações, resolvendo problemas e garantindo a satisfação dos clientes.
+      Gestão de estoque: Monitorar e controlar o estoque da loja, realizando inventários regulares, fazendo pedidos de reposição e garantindo que os produtos estejam disponíveis para os clientes.
+      Planejamento de vendas: Desenvolver estratégias de vendas e metas, implementar campanhas promocionais e acompanhar o desempenho das vendas para alcançar os objetivos estabelecidos.
+      Gestão financeira: Gerenciar o orçamento da loja, monitorar as despesas, controlar o fluxo de caixa e garantir a rentabilidade do negócio.
+    </p>
+  </div>
+  
+  <div id="info4" class="info">
+    <h2>CONTATOS</h2>
+    
+
+    <h2>Entre em Contato</h2>
+    <p>Você pode me contatar através do seguinte email: [rogeriosilva09435@gmail.com] ou através do formulário abaixo:</p>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <p>
+      Entre em contato comigo para mais informações, dúvidas ou oportunidades de colaboração.
+    </p>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.button');
+  const infoDivs = document.querySelectorAll('.info');
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      infoDivs.forEach(div => div.style.display = 'none');
+      infoDivs[index].style.display = 'block';
+    });
+  });
+</script>
+</body>
+</html>
